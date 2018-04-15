@@ -1,0 +1,138 @@
+/*Sets the width for searchfield and homebutton*/
+.searchfield-and-button {
+  float:left;
+  display: inline;
+  width: 50%;
+  min-width: 180px;
+}
+
+/*Searchfield and clear-button in browse-view*/
+.searchfield {
+  float: left;
+  padding-left: 0.2em;
+  width: calc(100% - 41px);
+  box-shadow: none;
+  color: #242730;
+}
+
+/*Search-field without button*/
+.form-control {
+  box-shadow: none;
+  border: 1px solid rgb(108, 117, 125);
+}
+
+.form-control:focus {
+  border: 1px solid rgb(108, 117, 125);
+  border-right: none;
+  box-shadow: none;
+}
+
+/*Home-button before searchfield*/
+#homebutton {
+  float: left;
+  width: 40.86px;
+  height: 38px;
+  min-width: 40.86px;
+  box-shadow: none;
+  padding: 0.25em;
+  padding-top: 0.4em;
+  padding-right: 0.3em;
+}
+
+.fa.fa-user {
+  font-size: 1.25em;
+}
+
+/*clear-button after searchfield*/
+#clearbutton {
+  box-shadow: none;
+  background-color: white;
+  border-color: rgb(108, 117, 125);
+  border-left-width: 0;
+  color: black;
+}
+
+#clearbutton:hover {
+  color: #AAA;
+}
+
+/*Rename-button next to CVs name*/
+.rename-button {
+  padding: 0.2em 0.5em;
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: x-small;
+  visibility: hidden;
+}
+
+/*Shows rename-button only on hover*/
+.rename:hover .rename-button{
+  visibility: visible;
+  display: inline;
+}
+
+.cv-toolbar {
+  margin-right: 1em;
+}
+
+.last-modified-datetime {
+  position: relative;
+  top: 0.15em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.language-flag {
+  margin-right: 0.5em;
+  background-color: #616982;
+}
+
+/*Sections where people and their
+CVs are listed*/
+.browse-section {
+	float: left;
+	display: inline;
+  width: 25%;
+	min-width: 180px;
+	padding-left: 0.5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+	overflow: auto;
+	height: 82vh;
+}
+
+.list-group {
+  width:100%;
+}
+
+/*People and their CVs in the lists*/
+.list-group-item {
+  padding-left: 1vw;
+  color: #242730;
+  width:99%;
+}
+
+/*People and their CVs in the lists, when active*/
+.list-group-item.active {
+  background-color: #d5d7de;
+  border-color: #d5d7de;
+  color: #000000;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: #616982;
+  color: #fff;
+}
+
+.tooltip-top > .arrow::before {
+  border-top-color: #616982;
+}
+
+.tooltip-right > .arrow::before {
+  border-right-color: #616982;
+}
+
+/*Stops the scrolling for the whole page*/
+html, body {
+  overflow: hidden;
+}

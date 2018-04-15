@@ -1,0 +1,78 @@
+.template-toggle {
+  float:right;
+  padding-top: 2px;
+}
+/*Copy-button next to template toggle*/
+.copy-button {
+  float: right;
+  margin-right: 2em;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  height: 31px;
+  padding: 0px 0.5em;
+}
+
+/*The message that appears when copy is
+pressed.*/
+.copy-message {
+  float: right;
+  margin-right: 0.5em;
+  padding-top: 2px;
+}
+
+/*Centers the text in Copy button*/
+.copy-button span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*Adds a border around the template when toggled*/
+.template {
+  border: 1px solid RGB(152,152,152);
+  margin:0px;
+}
+
+.language-dropdown {
+  margin-left: 0.8em;
+}
+
+.sections {
+  float: left;
+  width: 50%;
+  height: 80vh;
+  overflow: auto;
+}
+
+.statusMessage {
+  display: inline;
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
+.editor-buttonheader {
+  padding-left: 0.8vw;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    font-family: inherit;
+    font-size: 1em;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #666;
+    width: 100%;
+}
+
+html, body {
+  overflow: hidden;
+}

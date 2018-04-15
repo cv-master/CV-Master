@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:700');
+
+/*Changes the font of all the placeholders.
+In example the font in the search field.*/
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/*Changes the color, font and deletes the box
+shadow of all buttons. Doesn't take the box shadow
+away for search-icon button or myCVs-button.*/
+.button {
+  color: #242730;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: none;
+}
+
+/*Changes the hover color of each button*/
+.button:hover {
+  background-color: #242730;
+  border-color: #242730;
+  box-shadow: none;
+}
+
+/* The right color stays when the Export dropdown is opened */
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #242730;
+  border-color: #242730;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
+/*Affects the "search-header" in browse-view,
+the "back,save and export-header" in editor-view
+and the "exportbutton" holder in editor view*/
+.buttonheader {
+  float: left;
+  padding-top: 15px;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+  padding-bottom: 15px;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  height: 65px;
+  box-shadow: none;
+}
+
+/* Delete popover in Browse view and close popover in Editor view */
+.popover-buttongroup {
+  margin-top: 1vh;
+}
+
+/*Container for the pdf preview*/
+.CVpreview {
+  float: right;
+  width: 50%;
+  height: 92vh;
+  overflow: auto;
+}
+
+/*live preview of the CV*/
+.preview {
+  position: relative;
+  top: 65px;
+  width: 583px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 200px;
+  padding-bottom: 40px;
+}
+
+#PDFpreview {
+  float: right;
+  width: 100%;
+  height: 80vh;
+}
+
+.nav {
+  float: right;
+  height: 65px;
+  width: 100%;
+}
+
+.nav-item {
+  padding-top: 25px;
+  font-size: 14px;
+}
+
+.nav-link {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.nav > .buttonheader {
+  width: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,55 @@
+{
+  "name": "",
+  "description": "",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "react": "cd react/ && npm start",
+    "start": "nodemon server",
+    "react_build": "cd react/ && npm run build",
+    "install": "cd react/ && npm install",
+    "watch": "concurrently -n \"React,Server\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run react\" \"nodemon server\"",
+    "lint": "./node_modules/.bin/eslint server/**/*.js && ./node_modules/.bin/eslint react/src/**/*.js && ./node_modules/.bin/eslint react/src/**/**/*.js && ./node_modules/.bin/eslint react/src/**/**/**/*.js",
+    "heroku-postbuild": "cd react/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "test": "mocha server/test/ --timeout 10000 && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martturi/cv_master.git"
+  },
+  "dependencies": {
+    "@reaktor/express-gauth": "^2.3.0",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "ejs": "2.5.6",
+    "express": "4.15.2",
+    "express-session": "^1.15.6",
+    "history": "^4.7.2",
+    "html-pdf": "^2.2.0",
+    "markdown": "^0.5.0",
+    "pg": "7.4.0",
+    "promise": "^8.0.1",
+    "react": "^16.2.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.11.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-ejs": "0.0.2",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "mocha": "^4.1.0",
+    "nodemon": "^1.12.5"
+  }
+}

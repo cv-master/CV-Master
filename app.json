@@ -1,0 +1,21 @@
+{
+  "name": "cv_master",
+  "scripts": {
+     "postdeploy": "psql $DATABASE_URL -f SQL_table_creation.sql"
+  },
+  "env": {
+    "CLIENT_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

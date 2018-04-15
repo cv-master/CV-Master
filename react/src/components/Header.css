@@ -1,0 +1,11 @@
+.header {
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  padding-left: 1.2vw;
+  border-bottom: 0.1vh solid #242730;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #FC6054;
+  font-size: 3vh;
+  height: 8vh;
+}
