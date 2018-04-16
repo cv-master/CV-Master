@@ -1,4 +1,4 @@
-# CV_master
+# CV Master
 [![Build Status](https://travis-ci.org/cv-master/CV-Master.svg?branch=master)](https://travis-ci.org/cv-master/CV-Master)
 
 CV management system. Not actively supported or developed, but feel free to fork for your own purposes.
@@ -83,4 +83,4 @@ The application was never designed to be responsive, and is therefore not usable
 
 # Credits
 
-This software was created in 2018 by [Milla Alakuijala](https://github.com/millaalakuijala)
+This software was created in 2018 by [Milla Alakuijala](https://github.com/millaalakuijala), [Rasmus Järnström](https://github.com/hdjhi)
