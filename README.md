@@ -83,4 +83,4 @@ The application was never designed to be responsive, and is therefore not usable
 
 # Credits
 
-This software was created in 2018 by
+This software was created in 2018 by [Milla Alakuijala](https://github.com/millaalakuijala)
